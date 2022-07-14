@@ -1,0 +1,14 @@
+<div (click)="BackgroundClicked()" class="background">
+    <div (click)="$event.stopPropagation()" class="modal-card">
+
+        <div class="head-info">
+            <img src="{{item.imgSrc}}" alt="{{item.name}}">
+            <p class="modal-name">{{item.name}}</p>
+        </div>
+        <div class="modal-description">
+            <p>{{item.description}}</p>
+        </div>
+
+
+    </div>
+</div>

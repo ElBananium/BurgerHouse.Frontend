@@ -1,0 +1,55 @@
+.background
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-card
+{
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 30%;
+    width: min-content;
+    left: 35%;
+    min-height: 200px;
+    padding: 10px;
+    
+}
+.head-info
+{
+    display: flex;
+    margin: 0 50px;
+}
+img
+{
+    display: block;
+    height: 200px;
+}
+.modal-name
+{
+    margin-left: 50px;
+    word-break: keep-all;
+    line-height: 5;
+}
+
+.modal-description
+{
+    width: 60%;
+    margin: 0;
+    margin: 25px auto;
+    margin-top: 50px;
+    height: fit-content;
+    
+}
+
+.modal-description p
+{
+    word-break: break-all;
+    
+}

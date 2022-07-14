@@ -1,0 +1,47 @@
+:host
+{
+    display: block;
+
+    margin-top: 50px;
+    
+    
+}
+.card
+{
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+    padding: 7px;
+    cursor: pointer;
+}
+img
+{
+    display: block;
+    width: 80%;
+    margin: 25px auto;
+
+
+    
+}
+.name
+{
+    margin: 0;
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.price
+{
+    margin: 0;
+    margin-top: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin: 0;
+    vertical-align: auto;
+}
+.bottom
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+
+
+<button [hidden] = "isHiddenScrollLeft" (click)="GoLeftBtnClicked()" class="navBtn goLeftBtn"> < </button>
+<div (ScrollEnd)="onScrollEnd()" #list class="list">
+
+
+<category-item *ngFor="let item of categoriesList" [category]="item" [ngClass] = "{'selected-item':item.id == selectedCategory }" ></category-item>
+
+
+</div>
+<button  [hidden] = "isHiddenScrollRight"(click)="GoRightBtnClicked()" class="navBtn goRightBtn"> > </button>

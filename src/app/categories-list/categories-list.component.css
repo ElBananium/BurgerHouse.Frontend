@@ -1,0 +1,53 @@
+:host
+{
+    position: relative;
+}
+
+.list
+{
+    display: flex;
+    overflow-x: hidden;
+    height: 100%;
+    
+}
+
+category-item
+{
+    margin-right: 10px;
+    display: block;
+}
+.navBtn
+{
+    width: 50px;
+    height: 100%;
+    position: absolute;
+}
+.goLeftBtn
+{
+    left: 0;
+    top: 0;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    
+}
+.goRightBtn
+{
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    top: 0;
+    right: 0;
+
+}
+.navBtn
+{
+    background-color: inherit;
+    border: 0;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    font-size: 24px;
+}
+
+.selected-item
+{
+    background-color: #f4f4f4;
+}

@@ -1,0 +1,22 @@
+:host
+{
+    display: block;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 150ms;
+    cursor: pointer;
+}
+
+:host:hover
+{
+    background-color: #f4f4f4;
+}
+
+
+p
+{
+    text-align: center;
+    word-break:normal;
+    margin: 0;
+}

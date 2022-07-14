@@ -1,0 +1,11 @@
+<div (click)="CardClicked()" class="card">
+
+    <img src="{{item.imgSrc}}" alt="{{item.name}}">
+    <p class="name">{{item.name}}</p>
+    <div class="bottom">
+        <p class="price">Цена {{item.price}}</p>
+        <item-add-to-basket-button [item]="item"></item-add-to-basket-button>
+    </div>
+
+</div>
+<item-modal [hidden]="!isOpenModal" (closeModalEvent)="CloseModal()" [item]="item"></item-modal>
