@@ -1,0 +1,36 @@
+<div class="content">
+    <shared-loading *ngIf="!isLoaded"></shared-loading>
+    <div *ngIf="isLoaded" class="order">
+        
+        <div class="header">
+            <h1>№{{order.id}}</h1>
+
+            <div class="status">
+                {{statusString}}
+            </div>
+
+
+            
+
+        </div>
+
+        
+        <order-progress-bar class="progress-bar" [madePercent]="order.madePercent"></order-progress-bar>
+
+        <hr>
+        <h2>Состав заказа</h2>
+        <div class="basket-list">
+
+              <ordered-item class="ordered-item" *ngFor="let item of items" [item]="item"></ordered-item>
+    
+        </div>
+
+        <hr>
+
+        <div class="result">
+            <p>Итого</p>
+
+            <p>{{order.price}}</p>
+        </div>
+    </div>
+</div>

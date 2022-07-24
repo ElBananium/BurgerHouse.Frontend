@@ -1,7 +1,13 @@
 
 
 <button [hidden] = "isHiddenScrollLeft" (click)="GoLeftBtnClicked()" class="navBtn goLeftBtn"> < </button>
-<div (ScrollEnd)="onScrollEnd()" #list class="list">
+
+<div *ngIf="!isDataLoaded" class="loadingList list">
+    <div class="dontClickLayer"></div>
+    <category-item  *ngFor="let fitem of falseData" [category]="fitem"></category-item>
+</div>
+
+<div *ngIf="isDataLoaded" (ScrollEnd)="onScrollEnd()" #list class="list">
 
 
 <category-item *ngFor="let item of categoriesList" [category]="item" [ngClass] = "{'selected-item':item.id == selectedCategory }" ></category-item>

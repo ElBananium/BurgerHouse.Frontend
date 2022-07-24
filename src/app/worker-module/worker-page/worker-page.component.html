@@ -1,0 +1,11 @@
+<div class="content">
+    <header>
+        <div class="link" [routerLink]="['viewOrders']" routerLinkActive="link-select">Заказы</div>
+        <div class="link" [routerLink]="['makeOrder']" routerLinkActive="link-select">Создать заказ</div>
+    </header>
+
+    <main>
+
+        <router-outlet></router-outlet>
+    </main>
+</div>

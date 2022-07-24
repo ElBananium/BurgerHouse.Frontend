@@ -11,6 +11,10 @@ export abstract class IBasketStateService
     public abstract IsItemInBasket(id : number) : boolean;
 
     public abstract GetItem(id : number) : BasketItem;
+
+    public abstract DeleteItem(id : number) : void;
+
+    public abstract DropBasket() : void;
 }
 
 
@@ -64,6 +68,18 @@ export class BasketStateService implements IBasketStateService
         }
 
         
+    }
+    public DropBasket(): void {
+        this.items = new Array<BasketItem>();
+
+        window.localStorage.removeItem("basket");
+    }
+    public DeleteItem(id: number): void {
+
+        this.items = this.items.filter(x => x.item.Id != id);
+
+        window.localStorage.setItem("basket",JSON.stringify(this.items) );
+
     }
     public IsItemInBasket(id: number): boolean {
         return this.items.filter(x => x.item.Id == id).length > 0

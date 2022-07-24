@@ -1,3 +1,5 @@
-<categories-list></categories-list>
 
-<item-list></item-list>
+<basket-link></basket-link>
+<categories-list [dataLoaded]="dataLoadedSubject.asObservable()"></categories-list>
+
+<item-list [dataLoaded]="dataLoadedSubject.asObservable()"></item-list>

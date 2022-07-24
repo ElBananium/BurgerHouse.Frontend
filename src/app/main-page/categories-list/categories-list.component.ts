@@ -1,6 +1,7 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Category } from 'src/api-module/Modules/Category';
-import { IShopStateService } from '../Services/ShopStateService';
+import { IShopStateService } from 'src/app/Services/ShopStateService';
 
 @Component({
   selector: 'categories-list',
@@ -11,6 +12,12 @@ export class CategoriesListComponent implements OnInit {
 
   @ViewChild('list') list! :ElementRef;
 
+  @Input()
+  dataLoaded! : Observable<void>
+
+  falseData! : Array<Category>
+
+  isDataLoaded =false;
 
    isHiddenScrollLeft = true;
 
@@ -26,11 +33,23 @@ export class CategoriesListComponent implements OnInit {
 
 
 
-  constructor(private shopStateService : IShopStateService) { }
+  constructor(private shopStateService : IShopStateService) 
+  {
+    this.falseData = new Array<Category>();
+    for(let i = 0; i<15; i++)
+    {
+      this.falseData.push(new Category(i,"Fasjasjir"));
+    }
+   }
 
   ngOnInit(): void {
 
-    
+
+    this.dataLoaded.subscribe(() =>{
+      this.isDataLoaded = true;
+
+      this.ngDoCheck();
+    })
     
   }
 

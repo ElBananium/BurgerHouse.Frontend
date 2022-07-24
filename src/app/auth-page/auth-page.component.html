@@ -1,0 +1,19 @@
+
+<div class="background">
+
+
+<div class="content">
+    <div class="top">
+        <div class="name">Войти</div>
+        <div class="return-btn" (click)="ReturnBtnClicked()">
+            <div class="return-btn-x"></div>
+        </div>
+    </div>
+    <div class="main">
+        <auth-page-input-phone *ngIf="!codeSended" (CodeSended) = "OnCodeSended()"></auth-page-input-phone>
+        <auth-page-input-code *ngIf="codeSended" (Authorized)="OnAuthorized()"></auth-page-input-code>
+    </div>
+    
+</div>
+
+</div>

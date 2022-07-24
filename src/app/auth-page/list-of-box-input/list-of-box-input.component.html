@@ -1,0 +1,9 @@
+<auth-page-box-input *ngFor="let item of inputState" 
+[id]="item.boxId" 
+[data]="item.content"
+(DataFilled)="OnDataFilled($event)" 
+(BackSpacePressed)="OnBackSpacePressed($event)"
+(LeftArrowPressed)="OnLeftArrowPressed($event)"
+(RightArrowPressed)="OnRightArrowPressed($event)"
+[focusBoxEvent]="focusSubject.asObservable()" 
+[blurBoxEvent]="blurSubject.asObservable()"></auth-page-box-input>

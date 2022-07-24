@@ -1,0 +1,61 @@
+.phone-box
+{
+    display: flex;
+    z-index: 2;
+    position: relative;
+    background-color: #fafafa;
+    margin: 50px auto 0 auto;
+    width: fit-content;
+}
+
+.description
+{
+    margin-top: 50px;
+}
+p
+{
+    font-size: 24px;   
+    margin: 0;
+    margin-right: 10px;
+
+}
+
+.ok-box
+{
+    z-index: 1;
+    position: relative;
+
+
+}
+
+.ok-box button
+{
+    margin: 25px auto;
+    display: block;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #FFD300;
+    cursor: pointer;
+    transition: 150ms;
+}
+.ok-box button:hover
+{
+    background-color: #dcaf00;
+}
+
+.description-top
+{
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+}
+.description-additional
+{
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 10px;
+}

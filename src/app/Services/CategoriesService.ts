@@ -11,6 +11,8 @@ export abstract class ICategoriesService
     public abstract GetCategories() : Promise<Category[]>;
 
     public abstract GetItems(categoryid : number) : Promise<Item[]>;
+
+    public abstract GetItem(itemId : number) : Promise<Item>;
 } 
 
 
@@ -27,6 +29,11 @@ export class CategoriesService implements ICategoriesService
     
     public GetItems(categoryid: number): Promise<Item[]> {
         return this.apiCatServ.GetItems(categoryid);
+    }
+
+    public GetItem(itemId : number) : Promise<Item>
+    {
+        return this.apiCatServ.GetItem(itemId);
     }
 
     constructor(private apiCatServ : ApiCategories, private loadingService : ILoadingStateService){}

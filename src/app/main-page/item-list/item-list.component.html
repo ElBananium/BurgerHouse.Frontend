@@ -1,1 +1,8 @@
-<item *ngFor="let item of items" [item]="item"></item>
+<div *ngIf="!isDataLoaded" class="falseItemList itemlsit" >
+    <div class="dontclickLayer"></div>
+    <item *ngFor="let fitem of falseItems" [item]="fitem"></item>
+</div>
+
+<div *ngIf="isDataLoaded" class="itemlsit">
+    <item *ngFor="let item of items" [item]="item"></item>
+</div>

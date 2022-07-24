@@ -7,7 +7,12 @@
     padding-right: 10px;
     font-size: 24px;
     cursor: pointer;
+    transition: 100ms;
     
+}
+.puchasebutton:hover
+{
+    background-color: #dcaf00;
 }
 .addedBox
 {
@@ -29,6 +34,7 @@
     font-size: 24px;
     cursor: pointer;
     background-color: inherit;
+    transition: 100ms;
 }
 p
 {

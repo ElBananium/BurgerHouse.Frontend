@@ -1,0 +1,14 @@
+.status-list
+{
+    display: flex;
+    justify-content: space-between;
+}
+p
+{
+    margin-top: 50px;
+    text-align: center;
+}
+.close-order
+{
+    margin-top: 75px;
+}

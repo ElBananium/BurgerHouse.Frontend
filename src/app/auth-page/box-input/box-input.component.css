@@ -1,0 +1,11 @@
+.charbox
+{
+    width: 1em;
+    text-align: center;
+    font-size: 24px;
+    height: 1em;
+    margin: 0 0.2em;
+}
+.charbox:focus{
+    outline: none;
+}

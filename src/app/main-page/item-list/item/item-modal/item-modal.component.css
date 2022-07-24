@@ -35,7 +35,8 @@ img
 {
     margin-left: 50px;
     word-break: keep-all;
-    line-height: 5;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .modal-description
@@ -52,4 +53,9 @@ img
 {
     word-break: break-all;
     
+}
+.hr-style
+{
+    border: none;
+    border-top: 1px solid lightgray;
 }

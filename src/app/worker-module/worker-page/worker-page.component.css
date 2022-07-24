@@ -1,0 +1,36 @@
+.content
+{
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+header
+{
+    display: flex;
+
+}
+.link
+{
+    display: block;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 150ms;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.link-select
+{
+    background-color: #f4f4f4;
+}
+
+.link:hover
+{
+    background-color: #f4f4f4;
+}
+
+main
+{
+    margin-top: 75px;
+}

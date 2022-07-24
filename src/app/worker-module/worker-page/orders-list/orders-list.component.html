@@ -1,0 +1,6 @@
+
+<shared-loading *ngIf="!isLoaded"></shared-loading>
+
+<div *ngIf="isLoaded" class="itemlist">
+    <order-item class="item" *ngFor="let item of ordersList" [item]="item">{{item.price}}</order-item>
+</div>

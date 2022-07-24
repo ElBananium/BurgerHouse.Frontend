@@ -1,0 +1,25 @@
+
+<div class="content">
+    
+    <div class="basket-list">
+
+        <basket-item *ngFor="let item of items" [item]="item"></basket-item>      
+
+        <div *ngIf="isItemEmpty">
+            <h3 class="basketEmpty">Тут пусто</h3>
+        </div>
+    </div>
+
+    <div class="buy-container">
+        <button (click)="DoOrder()" class="buyBtn">Перейти к оформлению</button>
+        <hr class="buy-container-outling">
+
+        <div class="result-price">
+            <p>Общая стоимость</p>
+            <p>{{resultPrice}}</p>
+        </div>
+    </div>
+
+
+
+</div>

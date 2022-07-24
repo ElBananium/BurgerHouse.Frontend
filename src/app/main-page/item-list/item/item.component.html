@@ -1,6 +1,6 @@
-<div (click)="CardClicked()" class="card">
+<div  class="card">
 
-    <img src="{{item.imgSrc}}" alt="{{item.name}}">
+    <img (click)="CardClicked()" src="{{item.imgSrc}}">
     <p class="name">{{item.name}}</p>
     <div class="bottom">
         <p class="price">Цена {{item.price}}</p>

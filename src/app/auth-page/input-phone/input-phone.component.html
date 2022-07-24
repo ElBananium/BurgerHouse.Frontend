@@ -1,0 +1,16 @@
+
+<div class="description">
+   <p class="description-top">Введите номер телефона</p>
+   <p class="description-additional">На него будет отправлен код</p>
+</div>
+ <div class="phone-box">
+    
+   <p>+8</p>
+    <auth-page-list-of-box-input [countOfBox]="10" [preLoadedInfo]="preLoadBoxes" (AllFilled)="OnAllFilled($event)" (NotAllFilled)="OnNotAllFilled()"></auth-page-list-of-box-input>
+
+
+    
+ </div>
+ <div  [@okBox] = "okBoxState" class="ok-box">
+   <button [disabled]="isSendButtonDisabled" (click)="SendPhone()">Дальше</button>
+</div>

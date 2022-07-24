@@ -1,0 +1,20 @@
+:host
+{
+    display: flex;
+}
+
+.plusminusbtn
+{
+    border: 0;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: inherit;
+}
+p
+{
+    width: 50px;
+    text-align: center;
+}

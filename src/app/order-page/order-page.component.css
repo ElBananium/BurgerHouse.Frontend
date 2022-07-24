@@ -1,0 +1,72 @@
+.content
+{
+    max-width: 1200px;
+    margin: 50px auto;
+
+}
+.order
+{
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 8px 0px rgb(34 60 80 / 20%);
+    padding-bottom: 100px;
+}
+.header
+{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+h1
+{
+    margin: 0;
+    font-size: 38px;
+}
+.status
+{
+    margin-left: 15px;
+    height: 100%;
+    padding: 10px;
+    border: 3px solid #FFD300;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.progress-bar
+{
+    width: 70%;
+    margin: 100px auto;
+    display: block;
+}
+.ordered-item
+{
+    width: 75%;
+    margin: 0 auto;
+}
+h2
+{
+    margin: 35px;
+    font-size: 26px;
+    text-align: center;
+
+}
+
+.basket-list
+{
+    display: flex;
+    flex-direction: column;
+}
+
+hr
+{
+    border-top: 2px solid #D6D6D6;
+}
+.result
+{
+    width: 80%;
+    margin: 75px auto; 
+    display: flex;
+    font-size: 24px;
+    justify-content: space-between;
+}

@@ -1,0 +1,5 @@
+<input #input class="charbox" maxlength="1" 
+(keypress)="OnKeyPressed($event)" 
+(keydown.backspace)="OnBackSpacePressed($event)"
+(keydown.ArrowRight)=" OnRightArrowPressed($event)" 
+(keydown.ArrowLeft)="OnLeftArrowPressed($event)">
